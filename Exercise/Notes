@@ -1,1 +1,47 @@
+1. Selector
 
+      /*Element*/
+      li {
+
+      }
+      /*class*/
+      .hello {
+
+      }
+      /*id*/
+      #name {
+
+      }
+
+      /*Star - every single element*/
+
+      * {
+        border: 1px solid lightgrey;
+      }
+
+      /*Descendant Selector for all child, and then div.section > div for just direct child*/
+
+      li a {
+        color: red;
+      }
+
+      /*Adjacent Selector ul next to h4*/
+
+      h4 + ul {
+        border: 4px solid red;
+      }
+
+
+      /*Attribute Selector*/
+
+      a[href="http://www.google.com"] {
+        background: blue;
+      }
+
+      /*nth of type*/
+
+      li:nth-of-type(odd){
+        background: purple;
+      }
+2. Specificity
+ID> class, attribute, psudeo selector> tag selector
